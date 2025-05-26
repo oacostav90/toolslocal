@@ -6,7 +6,7 @@ param (
     [string]$LocalTarget, # Example: C:\projects
 
     [Parameter()]
-    [string]$DriveLetter = "W"
+    [string]$DriveLetter = "R"
 )
 
 # ============================================
