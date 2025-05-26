@@ -23,8 +23,7 @@ Try {
     New-PSDrive -Name $DriveLetter -PSProvider FileSystem -Root $NetworkShare -Credential $credential -Persist -ErrorAction Stop
 }
 Catch {
-    Write-Error "❌ Error Connecting to Drive networkshare: $_"
-    exit 1
+    Write-Error "❌ Error Connecting to Drive networkshare: $_"; exit 1
 }
 
 # ============================================
